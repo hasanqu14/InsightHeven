@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InsightHaven </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>InsightHaven </h1>
+    <nav>
+     <div class="filters">
+  <label>
+    Property Type:
+    <select id="type-filter" onchange="applyFilters()">
+      <option value="all">All</option>
+      <option value="apartment">Apartment</option>
+      <option value="villa">Villa</option>
+      <option value="flat">Flat</option>
+    </select>
+  </label>
+  <label>
+    City:
+    <select id="city-filter" onchange="applyFilters()">
+      <option value="all">All</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Pune">Pune</option>
+      <option value="Bengaluru">Bengaluru</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Delhi">Delhi</option>
+    </select>
+  </label>
+</div>
+
+    </nav>
+  </header>
+
+  <main>
+    <section id="property-list">
+      <!-- Properties inserted via JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 InsightHaven </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
